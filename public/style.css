@@ -1,0 +1,104 @@
+.search-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh; /* Mengisi tinggi seluruh viewport untuk memusatkan di tengah halaman */
+}
+
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Agar form lebih responsif */
+}
+
+.form-control {
+    width: 100px; /* Sesuaikan lebar */
+    height: 50px; /* Tinggi input */
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    height: 50px;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.card-img-top{
+    width: 100%; /* Agar gambar memenuhi lebar card */
+    height: 100px; /* Tinggi gambar, bisa disesuaikan */
+    object-fit: cover; /* Memastikan gambar proporsional */
+}
+
+.card-img-bottom {
+    width: 100%; /* Agar gambar memenuhi lebar card */
+    height: 150px; /* Tinggi gambar, bisa disesuaikan */
+    object-fit: cover; /* Memastikan gambar proporsional */
+}
+
+/* Mengatur posisi gambar di card populer */
+.card-populer {
+    display: flex;
+    justify-content: center; /* Gambar berada di tengah horizontal */
+    align-items: flex-start; /* Gambar di bagian atas card */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+    padding: 10px;
+}
+
+.card-deck {
+    width: 100%; /* Buat deck card responsif */
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Agar card membungkus ke baris baru jika ruang tidak cukup */
+    justify-content: space-around; /* Spasi antar card secara merata */
+}
+
+.card-category {
+    flex: 1 1 200px; /* Card akan memiliki lebar minimum 200px, dan mengisi ruang */
+    margin: 5px; /* Jarak antar card */
+}
+
+.card-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsif pada layar kecil */
+@media (max-width: 768px) {
+    .form-control {
+        width: 100%; /* Membuat input memenuhi lebar layar kecil */
+    }
+
+    .card {
+        width: 100%; /* Card akan mengambil seluruh lebar container di layar kecil */
+        margin-bottom: 20px; /* Jarak antar card */
+    }
+}
+.modal-content {
+    background-color: #0b0c0c; /* Abu-abu gelap */
+    color: white; /* Warna teks tetap putih untuk kontras */
+}
+
+/* Mengatur background modal header dan footer */
+.modal-header, .modal-footer {
+    background-color: #0b0c0c;
+    border: none; /* Hilangkan border jika tidak diinginkan */
+}
+
+.modal-header .close {
+    color: white; /* Ubah warna tombol close menjadi putih */
+}
+
+/* Menambahkan border putih pada elemen pemisah */
+.modal-body hr {
+    border-color: white;
+}
+.modal-header hr {
+    border-color: white;
+}
+
+
